@@ -1,5 +1,4 @@
-![Pencil logo](https://github.com/syndicatefx/Pencil/blob/master/assets/logo.png?raw=true)
-Pencil
+![Pencil logo](https://github.com/syndicatefx/Pencil/blob/master/assets/logo.png?raw=true) Pencil
 ======
 
 A Simple flat-file blog exercise built with plain(procedural) php, no funky frameworks, no fussy builds or installs. And, it comes with a super easy admin panel to edit, delete, create posts and upload images.
