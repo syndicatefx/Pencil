@@ -1,0 +1,317 @@
+/*
+admin styles also use the default style.css to complement the design
+*/
+header p{
+  font-size:80%;
+  margin:0;
+}
+select{vertical-align:middle}
+input{vertical-align:text-bottom}
+input[type="radio"]{vertical-align:text-bottom}
+input[type="checkbox"]{vertical-align:bottom;*vertical-align:baseline}
+label,input[type=button],input[type=submit],button{cursor:pointer}
+button,input,select,textarea{margin:0;font-family:inherit;}
+input[type="text"]{
+  border:1px solid #aaa;
+  background:#fff;
+  width:100%;
+  padding:.5em;
+}
+button,.trumbowyg-modal-box .trumbowyg-modal-button{
+	width:auto;
+	overflow:visible;
+	background-color:#f3f3f3;
+  background-image:-moz-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image:-ms-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e1e1e1));
+  background-image:-webkit-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image:-o-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image:linear-gradient(top, #ffffff, #e1e1e1);
+  border:1px solid #dadada;
+  border-left:1px solid #d2d2d2;
+  border-right:1px solid #d2d2d2;
+  border-bottom-color:#a9a9a9;
+  box-shadow:0 1px 0 rgba(0,0,0,0.15),inset 0 1px 1px 0 rgba(255,255,255,0.6);
+  text-shadow:0 1px 0px #ffffff;
+	padding:.5em;
+  margin-left:.2em;
+}
+button[name="newfile"]{
+  margin:1em 0;
+}
+button:hover,.trumbowyg-modal-box .trumbowyg-modal-button:hover{
+	background:none;
+  background:#eee;
+  text-shadow:0 1px 0px rgba(255,255,255,0.8);
+  text-decoration:none;
+  box-shadow:0 1px 0 rgba(0,0,0,0.15);
+}
+
+#archives li{
+	padding:.5em 0;
+}
+#archives li button{
+	float:right;
+}
+/*************************************
+  WYSIWYG
+*************************************/
+.trumbowyg-box{
+  display:block;
+  position:relative;
+  border:transparent;
+  background:#fdfdfd;
+  width:96%;
+  text-align:left;
+  min-height:30em;
+  margin:1em auto;
+  border-bottom:1px solid #aaa;
+}
+
+.trumbowyg-box .editor{
+  margin: 0 auto; 
+}
+
+.trumbowyg-editor,
+.trumbowyg-textarea{
+  position:relative;
+  padding:1% 2%;
+  min-height:30em;
+  width:100%;
+  font-size:80%;
+  border-style:none;
+  resize:none;
+  outline:none; 
+}
+
+.trumbowyg-textarea{
+  position:relative;
+  display:block;
+  overflow:auto;
+  border:none;
+  white-space:normal;
+}
+
+.trumbowyg-button-pane{
+  position:relative;
+  width:100%;
+  line-height:1.944em;
+  height:1.944em;
+  border-bottom:1px solid #aaa;
+  margin:0;
+  padding:0;
+  list-style-type:none; 
+}
+.trumbowyg-button-pane li{
+  float:left;
+  height:100%;
+  text-align:center;
+}
+.trumbowyg-button-pane li.trumbowyg-separator{
+  width:1px;
+  background:#666;
+  margin:0;
+  height:1.944em;
+}
+.trumbowyg-button-pane.trumbowyg-disable li:not(.trumbowyg-not-disable) a{
+  opacity:.2;
+  cursor:default;
+}
+.trumbowyg-button-pane:not(.trumbowyg-disable) li a:hover:before,
+.trumbowyg-button-pane:not(.trumbowyg-disable) li a:focus:before,
+.trumbowyg-button-pane li a.trumbowyg-active:before,
+.trumbowyg-button-pane li.trumbowyg-not-disable a:hover:before,
+.trumbowyg-button-pane li.trumbowyg-not-disable a:focus:before{
+  color:#4d4d4d;
+  outline:none;
+}
+a.trumbowyg-open-dropdown:after{
+  display:block;
+  content:"";
+  position:absolute;
+  top:1.111em;
+  right:0;
+  height:0;
+  width:0;
+  border:3px solid transparent;
+  border-top-color:#999;
+}
+a.trumbowyg-open-dropdown:hover:after{
+  border-top-color:#4d4d4d;
+}
+.trumbowyg-button-pane .trumbowyg-buttons-right {
+  float:right;
+  width:auto;
+}
+.trumbowyg-button-pane .trumbowyg-buttons-right a{
+  float:left;
+}
+
+.trumbowyg-dropdown{
+  width:10em;
+  border:1px solid #dddddd;
+  background:#eee;
+}
+.trumbowyg-dropdown a{
+  display:block;
+  width:100%;
+  height:1.944em;
+  font-size:90%;
+  line-height:1.944em;
+  text-decoration:none;
+  background:#EFEFEF;
+  padding:0 1em;
+  color:#333;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.trumbowyg-dropdown a:hover,
+.trumbowyg-dropdown a:focus{
+  background:#fff; 
+}
+
+/* Modal box */
+.trumbowyg-modal{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:30em;
+  font-family:inherit;
+  font-size:90%;
+}
+.trumbowyg-modal-box{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:auto;
+  z-index:1;
+  background:#fdfdfd;
+  padding:1em;
+}
+.trumbowyg-modal-title{
+  font-size:1em;
+  font-weight:700;
+  display: block;
+  color:#333; 
+}
+.trumbowyg-modal-box label{
+  display:block;
+}
+.trumbowyg-modal-box .error{
+  margin-top:1.389em;
+  display:block;
+  color:#fff; 
+}
+.trumbowyg-overlay{
+  position:absolute;
+  background:#fdfdfd;
+  width:100%;
+  left:0;
+  display:none; 
+}
+
+/* Fullscreen */
+.trumbowyg-fullscreen.trumbowyg-box,
+.trumbowyg-fullscreen .editor{
+  border:none; 
+}
+.trumbowyg-fullscreen .trumbowyg-overlay{
+  height:100%!important; 
+}
+.trumbowyg-fullscreen .trumbowyg-editor,
+.trumbowyg-fullscreen .trumbowyg-textarea,
+.trumbowyg-fullscreen .trumbowyg-button-pane,
+.trumbowyg-fullscreen .trumbowyg-modal,
+.trumbowyg-fullscreen .trumbowyg-modal-box{
+  max-width:50em;
+  margin:0 auto;
+}
+
+/* Buttons icons */
+@font-face {
+  font-family:'trumbo';
+  src:url('fonts/trumbo.eot');
+  src:url('fonts/trumbo.eot?#iefix') format('embedded-opentype'),
+    url('fonts/trumbo.woff') format('woff'),
+    url('fonts/trumbo.ttf') format('truetype'),
+    url('fonts/trumbo.svg#trumbo') format('svg');
+  font-weight:normal;
+  font-style:normal;
+}
+.trumbowyg-button-pane li a{
+  display:block;
+  position:relative;
+  text-indent:-9999px;
+  width:1.389em;
+  height:1.389em;
+  overflow:hidden;
+  margin:.22em .22em .22em 0;
+}
+.trumbowyg-button-pane li a:before{
+  font-family:'trumbo';
+  speak:none;
+  font-style:normal;
+  font-weight:normal;
+  font-variant:normal;
+  text-transform:none;
+  line-height:1;
+  text-indent:0;
+  font-size:1em;
+  color:#999;
+  position:absolute;
+  top:0;
+  left:0;
+  width:1.389em;
+  height:1.389em;
+  padding:.2em 0 0;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+  a.trumbowyg-viewHTML-button:before{
+    content:"\e000"; }
+  a.trumbowyg-formatting-button:before{
+    content:"\e001"; }
+  a.trumbowyg-bold-button:before,a.trumbowyg-strong-button:before{
+    content:"\e002"; }
+  a.trumbowyg-italic-button:before,a.trumbowyg-em-button:before{
+    content:"\e003"; }
+  a.trumbowyg-underline-button:before{
+    content:"\e004"; }
+  a.trumbowyg-strikethrough-button:before{
+    content:"\e005"; }
+  a.trumbowyg-link-button:before{
+    content:"\e00a"; }
+  a.trumbowyg-insertImage-button:before{
+    content:"\e00b"; }
+  a.trumbowyg-justifyLeft-button:before{
+    content:"\e006"; }
+  a.trumbowyg-justifyCenter-button:before{
+    content:"\e007"; }
+  a.trumbowyg-justifyRight-button:before{
+    content:"\e008"; }
+  a.trumbowyg-justifyFull-button:before{
+    content:"\e009"; }
+  a.trumbowyg-unorderedList-button:before{
+    content:"\e00c"; }
+  a.trumbowyg-orderedList-button:before{
+    content:"\e00d"; }
+  a.trumbowyg-horizontalRule-button:before{
+    content:"\e010"; }
+  a.trumbowyg-fullscreen-button:before{
+    content:"\e00e"; }
+  a.trumbowyg-close-button:before{
+    content:"\e011"; }
+
+.trumbowyg-fullscreen a.trumbowyg-fullscreen-button:before {
+  content:"\e00f";
+}
+
+
+

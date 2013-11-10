@@ -1,0 +1,355 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,300italic,300,400italic,700,700italic);
+::-moz-selection{background:#666;color:#fff;}
+::selection{background:#666;color:#fff;}
+
+	/*--------------------------------------
+	  RESET HTML
+	--------------------------------------*/
+	article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,dialog,summary{
+		display:block
+	}
+	audio[controls],canvas,video{
+		display:inline-block;
+		*display:inline;zoom:1
+	}
+	audio:not([controls]){
+		display:none;height:0
+	}
+	[hidden]{
+		display:none
+	}
+	*,*:before,*:after{
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	html{
+		height:100%;
+		overflow-y:scroll;
+		-webkit-text-size-adjust:100%;
+		-ms-text-size-adjust:100%
+	}
+	body{
+		min-height:100%;
+		font-size:100%;
+		-webkit-hyphens:auto;
+		-moz-hyphens:auto;
+		-ms-hyphens:auto;
+		hyphens:auto;
+		word-wrap:break-word;
+		-webkit-font-smoothing:antialiased;
+		font-smoothing:antialiased;
+		text-rendering:optimizeLegibility;
+		margin:0;
+	}
+	h1,h2,h3,h4,h5,h6,p,blockquote,q,figure,pre,address,hr,code,samp,dl,ol,ul,menu{
+		padding:0;
+		margin:0;
+	}
+	abbr,acronym,blockquote,code,dir,kbd,listing,plaintext,q,samp,tt,var,xmp{
+		-webkit-hyphens:none;
+		-moz-hyphens:none;
+		-ms-hyphens:none;
+		-o-hyphens:none;
+		hyphens:none;
+	}
+	/*--------------------------------------
+	  TYPOGRAPHY GENERIC STYLES
+	--------------------------------------*/
+	h1{
+		font-size:2.75em;
+		line-height:1.2em;
+		margin-bottom:0.4em
+	}
+	h2{
+		font-size:2em;
+		line-height:1em;
+		margin-bottom:0.5em
+	}
+	h3{
+		font-size:1.75em;
+		line-height:1.33em;
+		margin-bottom:0.6667em
+	}
+	h4{
+		font-size:1.25em;
+		line-height:1em;
+		margin-bottom:1em
+	}
+	h5{
+		font-size:1em;
+		line-height:1.142em;
+		margin-bottom:1.142em
+	}
+	h6{
+		font-size:0.9em;
+		line-height:1.33em;
+		margin-bottom:1.33em
+	}
+	p,ul,ol,dl,blockquote,pre{
+		font-size:1em;
+		line-height:1.625em;
+		margin-bottom:1.5em
+	}
+	p + p{
+		text-indent:1.5em;
+		margin-top:-.75em;
+	}
+	small{
+		font-size:0.875em;
+		line-height:1.714em;
+		margin-bottom:1.714em
+	}
+	pre code{
+		word-wrap:normal;
+		white-space:-moz-pre-wrap;
+		white-space:pre-wrap;
+	}
+	pre,code,kbd,samp{
+		font-family:Menlo, Consolas, 'DejaVu Sans Mono', Monaco, 'Courier New', Courier, monospace;
+	}
+	pre{
+		white-space:pre;
+	}
+
+	code{
+		white-space:pre;
+		font-family:monospace;
+	}
+	blockquote,q{
+		quotes:none
+	}
+	blockquote{
+		font-size:1.1em;
+		position:relative;
+		padding:1em;
+	}
+	blockquote:before,
+	blockquote:after{
+		height:1em;
+		position:absolute;
+		font-size:3em;
+	}
+	blockquote:before{
+		content: '“';
+		top:0;
+		left:0;
+	}
+	blockquote:after{
+		content:'”';
+		bottom:0;
+		right:0;
+	}
+	blockquote > p{
+		padding:0
+	}
+	q:before,q:after{
+		content:'';
+		content:none
+	}
+	cite{
+		font-size:0.8em
+	}
+	blockquote,q,cite,dfn{
+		font-style:italic
+	}
+	ul,ol{
+		list-style-position:inside
+	}
+	li ul,li ol,dl dd{
+		margin-left:1.5em
+	}
+	dt{
+		font-weight:700;
+	}
+	var,address{
+		font-style:normal
+	}
+	sub,sup{
+		font-size:75%;
+		line-height:0;
+		position:relative;
+		vertical-align:baseline
+	}
+	sup{
+		top:-0.5em
+	}
+	sub{
+		bottom:-0.25em
+	}
+	figure{
+		margin-bottom:1.5em
+	}
+	figure img{
+		display:block;
+		margin:0 auto;
+	}
+	figcaption{
+		text-align:center;
+	}
+	img,object,embed,video{
+		max-width:100%;
+		_width:100%
+	}
+	img{
+		height:auto;
+		-ms-interpolation-mode:bicubic
+	}
+	svg:not(:root){
+		overflow:hidden
+	}
+	abbr[title],dfn[title],acronym{
+		cursor:help
+	}
+	ins,mark{
+		text-decoration:none
+	}
+	del{
+		text-decoration:line-through
+	}
+/*--------------------------------------
+  DESIGN
+--------------------------------------*/
+html{
+	background:#fdfdfd;
+	color:#666;
+}
+body{
+	position:relative;
+	font:normal 112.5% 'Titillium Web',arial,sans-serif;
+	font-weight:400;
+	line-height:1.625em;
+	text-align:center;
+	max-width:40em;
+	padding:1em;
+	margin:0 auto;
+}
+a{
+	color:#06CDDB;
+	text-decoration:none;
+	-webkit-transition:all .2s linear;  
+	-moz-transition:all .2s linear;  
+	-o-transition:all .2s linear;  
+	-ms-transition:all .2s linear;  
+	transition:all .2s linear;
+}
+a:hover,a:focus,a:active{
+	color:#4d4d4d;
+	outline:0;
+}
+h2,h3,h4,h5{
+	font-weight:400;
+}
+#archives li h2,.post-title,.date,footer{
+	font-weight:300;
+}
+pre{
+	background:#211D1D;
+	color:#fdfdfd;
+	padding:0 1em;
+}
+header{
+	padding:0 0 3em;
+}
+header h1{
+	font-size:1.8em;
+	line-height:1.4em;
+	font-weight:400;
+	border-bottom:1px solid #eee;
+	margin:0;
+}
+#archives{
+	list-style:none;
+	margin:2em 0;
+}
+#archives li:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+#archives li{
+	text-align:left;
+	border-bottom:1px solid #eee;
+}
+#archives li h2{
+	font-size:1.6em;
+	margin:0;
+}
+#archives a{
+	display:block;
+	padding:.5em 0;
+}
+article{
+	text-align:left;
+	margin:2em 0 5em;
+}
+.date{
+	display:block;
+	border-bottom:1px solid #eee;
+	text-align:center;
+	margin:0 0 1.5em 0;
+}
+.post-title{
+	font-size:2.2em;
+	text-align:center;
+	margin-bottom:0.45em
+}
+.success,.error,.warning{
+  max-width:30em;
+  color:#fff;
+  text-align:center;
+  padding:.5em;
+  margin:1em auto;
+}
+.success{
+  background:#5FD88D;
+}
+.error{
+  background:#DD4444;
+}
+.warning{
+  background:#EF8323;
+}
+footer{
+	font-size:80%;
+	text-align:center;
+}
+
+/**********PAGINATION***********/
+.holder{
+	margin:1em 0;
+}
+.holder:after,.holder:before{
+	content:"";
+	display:table;
+	clear:both;
+}
+.holder a{
+	visibility:hidden
+}
+a.jp-previous,a.jp-next{
+	visibility:visible;
+	cursor:pointer;
+	font-size:2em;
+	line-height:1;
+	padding:.5em;
+	border-radius:50%;
+}
+a.jp-previous{
+	float:left;
+}
+a.jp-next{
+	float:right;
+}
+a.jp-current,a.jp-current:hover{ 
+	display:none;
+}
+a.jp-disabled, a.jp-disabled:hover{
+	color:#fdfdfd;
+}
+a.jp-current, a.jp-current:hover,
+a.jp-disabled, a.jp-disabled:hover{
+	cursor:default; 
+	background:none;
+}
+.holder span{margin:0 0.313em;}
