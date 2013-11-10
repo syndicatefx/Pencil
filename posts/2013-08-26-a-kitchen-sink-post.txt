@@ -1,0 +1,151 @@
+<p>Headers are used to describe such elements as website name, slogan, section titles. HTML and XHTML specifications define 6 levels of headers, where h1 is the most important and h6 is the least important.</p>
+		<h2>Paragraphs</h2>
+		<p>According to Wikipedia: a paragraph (from the Greek <a href="#">paragraphos</a>, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. The start of a paragraph is indicated by beginning on a new line. Sometimes the first line is indented; sometimes it is indented without beginning a new line.</p>
+		<p>A paragraph typically consists of a unifying main point, thought, or idea accompanied by supporting details. The non-fiction paragraph usually begins with the general and moves towards the more specific so as to advance an argument or point of view. Each paragraph builds on what came before and lays the ground or run the length of multiple pages, and may consist of one or many sentences. When dialogue is being quoted in fiction, a new paragraph is used each time the person being quoted changed.</p>
+		<h3>Header 3</h3>
+		<p>In (X)HTML, the p element marks a block of text as a paragraph – the opening tag &lt;p&gt; marks the beginning of a paragraph, and the closing tag &lt;/p&gt; marks the end of a paragraph. The end tag is optional for legacy HTML as the browser automatically starts another paragraph at the next &lt;p&gt; tag, or the nextblock element.</p>
+		<h4>Header 4</h4>
+		<p>In (X)HTML, the p element marks a block of text as a paragraph – the opening tag &lt;p&gt; marks the beginning of a paragraph, and the closing tag &lt;/p&gt; marks the end of a paragraph. The end tag is optional for legacy HTML as the browser automatically starts another paragraph at the next &lt;p&gt; tag, or the nextblock element.</p>
+		<h5>Header 5</h5>
+		<p>In (X)HTML, the p element marks a block of text as a paragraph – the opening tag &lt;p&gt; marks the beginning of a paragraph, and the closing tag &lt;/p&gt; marks the end of a paragraph. The end tag is optional for legacy HTML as the browser automatically starts another paragraph at the next &lt;p&gt; tag, or the nextblock element.</p>
+		<h6>Header 6</h6>
+		<p>In (X)HTML, the p element marks a block of text as a paragraph – the opening tag &lt;p&gt; marks the beginning of a paragraph, and the closing tag &lt;/p&gt; marks the end of a paragraph. The end tag is optional for legacy HTML as the browser automatically starts another paragraph at the next &lt;p&gt; tag, or the nextblock element.</p>
+		<h2>Links</h2>
+		<p><a href="#">Local link</a><br>
+		<a href="http://www.google.com" class="visited">Visited link</a><br>
+		<a href="http://www.google.com" class="external">External link</a><br>
+		<a href="https://www.google.com">External link with encrypted connection</a><br>
+		<a href="mailto:admin@test.com">E-mail link</a></p>
+
+		<h2>Block elements</h2>
+		<h3>Figure</h3>
+		<figure>
+			<img src="http://placehold.it/768x480/ff6600/fff&amp;text=image">
+			<figcaption>
+				<strong>Fig. 1.2 |</strong> A placeholder image
+			</figcaption>
+		</figure>
+		<h3>Block quote</h3>
+		<blockquote cite="http://en.wikipedia.org/wiki/Blockquote"><p>The blockquote element is used to indicate the quotation of a bigger section of text from another source. Using the default HTML styling of most web browsers, it will indent the right and left margins both on the display and in printed form.</p><cite><small><a href="">Wikipedia, The Free Encyclopedia</a></small></cite>
+		</blockquote>
+		<h3>Preformated text</h3>
+<pre><code>
+body{
+	font:100% 'Merriweather',serif;
+	font-weight:300;
+	max-width:45em;
+	padding:0 1em;
+	margin:0 auto;
+}
+</code></pre>
+		<h3>Text Level</h3>
+		<dl>
+		<dt><code>&lt;em&gt;</code></dt>
+		<dd>Element used to <em>put emphasis on certain information</em>. Most browsers display emphased text in italics by default. Sample: <em>This is emphasied text</em>.</dd>
+
+		<dt><code>&lt;strong&gt;</code></dt>
+		<dd>This element stands for “stronger emphasis” and is used for marking more important text. Sample: <strong>This is text with stronger emphasis</strong></dd>
+
+		<dt><code>&lt;cite&gt;</code></dt>
+		<dd>According to <cite>W3C specification</cite>, we use <code>cite</code> element to define source of a quotation or reference. Sample: <cite>This is quotation source</cite></dd>
+
+		<dt><code>&lt;dfn&gt;</code></dt>
+		<dd>Element used to markup inline definition of a single term. Sample: <dfn>This is definition</dfn></dd>
+
+		<dt><code>&lt;code&gt;</code></dt>
+		<dd>This element informs the browser that it contains a computer code, such as XHTML markup. Sample: <code>document.write("Hello world");</code></dd>
+
+		<dt><code>&lt;samp&gt;</code></dt>
+		<dd>Defines computer output data, for example we can use it to markup error messages Sample: <samp>Error: no such file or directory</samp></dd>
+
+		<dt><code>&lt;kbd&gt;</code></dt>
+		<dd>Means information that should be entered by the user. Sample: press <kbd>Alt + F4</kbd> to close this window. <kbd>ESC</kbd></dd>
+
+		<dt><code>&lt;var&gt;</code></dt>
+		<dd>Means variables used in computer programs or scripts. Sample: <var>counter</var></dd>
+
+		<dt><code>&lt;abbr&gt;</code></dt>
+		<dd>Abbreviation a shortened form of a word or phrase Sample: <abbr title="doctor">dr</abbr></dd>
+
+		<dt><code>&lt;acronym&gt;</code></dt>
+		<dd>A word formed from the initial letters of other words Sample acronyms: <acronym title="eXtensible HyperText Markup Language">XHTML</acronym></dd>
+
+		<dt><code>&lt;q&gt;</code></dt>
+		<dd>Inline quotation Sample: <q>This is sample quotation</q></dd>
+		</dl>
+		<h2>Other elements</h2>
+		<h3>Subscript and superscript samples</h3>
+		<p>H<sub>2</sub>O,<br>
+		E = mc<sup>2</sup>,<br>
+		The 14<sup>th</sup> of September</p>
+		<h3>Insertion and deletion samples</h3>
+		<p><ins title="Added new information according to suggestions" datetime="2009-07-12T08:15:30+02:00">This information was just added.</ins><br>
+		<del>While this information is no longer valid.</del></p>
+		<h3>Presentational elements</h3>
+		<p><strong>Bold text</strong><br>
+		<em>Italic text</em><br>
+		<tt>Typewriter text</tt><br>
+		<big>Big</big><br>
+		<small>Small</small><br></p>
+		<h4>Horizontal rule:</h4>
+		<hr>
+		<h3>UTF-8 test</h3>
+		<p>Ä, ä, Ö, ö, Ü, ü, ß, Ã, ã, Ç, ç, Ô, ô, É, é, À, à, Š Ť Ž Ľ Č Ě Ď Ň Ř Ů Ĺ, ХЦЧШЩЬЫЪЭЮЯ</p>
+		<h2>Lists</h2>
+		<h3>Unordered List</h3>
+		<ul>
+		<li>Apple</li>
+		<li>Pear</li>
+		<li>Banana</li>
+		<li>Orange</li>
+		<li>Carrot</li>
+		</ul>
+		<h3>Ordered List</h3>
+		<ol>
+		<li>First</li>
+		<li>Second</li>
+		<li>Third</li>
+		<li>Fourth</li>
+		</ol>
+		<h3>Definition List</h3>
+		<dl>
+		<dt>Definition List Title</dt>
+		<dd>This is a definition list division.</dd>
+		<dt>Inkscape</dt>
+		<dd>Open Source vector graphics editor</dd>
+		<dt>SVG</dt>
+		<dd>Scalable Vector Graphics</dd>
+		<dd>W3C standard</dd>
+		<dt>GIMP</dt>
+		<dd>GNU Image Manipulation Program</dd>
+		<dt>Drupal</dt>
+		<dd>Content Management System</dd>
+		</dl>
+		<h3>Nested lists</h3>
+		<ol>
+		<li>one, two
+		<ol>
+		<li>buckle my shoe</li>
+		</ol>
+		</li>
+		<li>three, four
+		<ol>
+		<li>knock at the door</li>
+		</ol>
+		</li>
+		<li>Five, six
+		<ol>
+		<li>pick up sticks</li>
+		</ol>
+		</li>
+		<li>Seven, eight, lay them straight
+		<ol>
+		<li>Nine, ten, a big fat hen</li>
+		<li>Eleven, twelve, dig and delve</li>
+		<li>Thirteen, fourteen, maids a’courting</li>
+		<li>Fifteen, sixteen, maids in the kitchen</li>
+		<li>Seventeen, eighteen, maids a’waiting</li>
+		<li>Nineteen, twenty, my platter’s empty …</li>
+		</ol>
+		</li>
+		</ol>

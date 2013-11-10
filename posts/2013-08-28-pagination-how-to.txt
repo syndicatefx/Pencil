@@ -1,0 +1,10 @@
+<p>To edit the number of post titles you want listed per slide on your index page open up footer.php and change the number on lines 15 and 34 (for admin page):</p>
+<pre><code>
+$(document).ready(function(){
+	$(".holder").jPages({
+        containerID: "archives",
+        perPage :5,//change this number
+        links:false
+    });
+});
+</code></pre>
