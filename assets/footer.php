@@ -1,6 +1,6 @@
 <footer>
 <p>&copy;<?php echo date('Y').'&nbsp;'.$author.'&nbsp;-&nbsp;'.$copyright; ?></p>
-<a href="" title="Powered by Pencil">Powered by Pencil</a>
+<a href="https://github.com/syndicatefx/Pencil" title="Powered by Pencil">Powered by Pencil</a>
 </footer>
 
 <?php
