@@ -5,9 +5,9 @@ A Simple flat-file blog exercise built with plain(procedural) php, no funky fram
 
 This project was built as an exercise in learning basic php programing, it might not be suitable for hard core production use, but it is a usable solution for a lightweight - single user blog.
 
-##Demo
+##Screenshot (admin panel)
 
-Coming soon!!
+<img src="https://dl.dropboxusercontent.com/u/26469456/pencil.jpg">
 
 ##Install
 
