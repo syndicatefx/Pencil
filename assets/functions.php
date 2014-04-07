@@ -31,7 +31,6 @@ function ListPosts(){
 	if(count($files) > 0){
 		foreach($files as $file) {
 			$file = basename($file);
-			filemtime($file);
 			$file = preg_replace('/\.' . preg_quote(pathinfo($file, PATHINFO_EXTENSION), '/') . '$/', '', $file);
 			$fulltitle = str_replace ("-", " ", $file);
 			$title = substr($fulltitle, 11);
