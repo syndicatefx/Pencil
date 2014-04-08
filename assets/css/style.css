@@ -323,8 +323,14 @@ a.jp-previous,a.jp-next{
 a.jp-previous{
 	float:left;
 }
+a.jp-previous:before{
+	content:"\276e";
+}
 a.jp-next{
 	float:right;
+}
+a.jp-next:after{
+	content:"\276f";
 }
 a.jp-current,a.jp-current:hover{ 
 	display:none;
