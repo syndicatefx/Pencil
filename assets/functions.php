@@ -15,7 +15,7 @@ function PageTitle(){
 }
 //PAGE DESCRIPTION////////////////////////////////////////
 function PageDesc(){
-		$post = basename($_GET[name]);
+		$post = basename($_GET['name']);
 		$text = file_get_contents("posts/$post.txt");
 		$start = strpos($text, '<p>');
 		$end = strpos($text, '.', $start);
@@ -50,7 +50,7 @@ function ListPosts(){
 }
 //VIEW POST//////////////////////////////////////////////
 function ShowPost(){
-	$post = basename($_GET[name]); 
+	$post = basename($_GET['name']); 
  	$date = date_create(substr($post, 0, 10));
 
   	if (isset($post)) {
